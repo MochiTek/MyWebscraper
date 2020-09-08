@@ -23,7 +23,7 @@ f = open(filename, "w")
 headers = "brand, itemname, shipping\n"
 f.write(headers)
 
-#drill into the element and scrape what you need
+#drill into the element and scrape what you need from the website
 for item in itemcell:
     brand = item.div.div.a.img["title"]
     
