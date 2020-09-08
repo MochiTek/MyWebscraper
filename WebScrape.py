@@ -1,3 +1,5 @@
+##First Version of the webscraper
+
 from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
 
@@ -40,3 +42,5 @@ for item in itemcell:
     f.write(brand + "," + itemname.replace(",","|") + "," + shippingrate + "\n")
 
 f.close()
+
+##update
